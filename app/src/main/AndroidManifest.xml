@@ -18,6 +18,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CapturaEvidencias">
         <activity
+            android:name=".FotoActivity"
+            android:exported="false" />
+        <activity
             android:name=".RegistrosActivity"
             android:exported="false" />
         <activity

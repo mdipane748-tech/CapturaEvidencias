@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
     android:fillViewport="true">
 
     <LinearLayout
@@ -13,11 +14,18 @@
         android:orientation="vertical"
         android:padding="24dp">
 
+        <ImageView
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="12dp"
+            app:srcCompat="@android:drawable/ic_menu_camera"/>
+
         <TextView
             android:id="@+id/txtTitulo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Registro Fotográfico"
+            android:text="Sistema de Registro Fotográfico"
             android:textAlignment="center"
             android:textSize="30sp"
             android:textStyle="bold"
@@ -29,7 +37,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="6dp"
             android:layout_marginBottom="28dp"
-            android:text="Captura de imagen • Voz • SQLite"
+            android:text="Captura de evidencias mediante fotografía, voz y almacenamiento local"
             android:textAlignment="center"
             android:textColor="#757575"
             android:textSize="16sp"/>
@@ -59,6 +67,8 @@
             android:text="Capturar Fotografía"
             android:textAllCaps="false"
             android:textSize="16sp"
+            android:textColor="@color/blanco"
+            app:backgroundTint="@color/azul"
             app:cornerRadius="16dp"
             app:icon="@android:drawable/ic_menu_camera"
             app:iconGravity="textStart"
@@ -91,6 +101,8 @@
             android:text="Grabar Descripción"
             android:textAllCaps="false"
             android:textSize="16sp"
+            android:textColor="@color/blanco"
+            app:backgroundTint="@color/morado"
             app:cornerRadius="16dp"
             app:icon="@android:drawable/ic_btn_speak_now"
             app:iconGravity="textStart"
@@ -104,6 +116,8 @@
             android:text="Guardar Registro"
             android:textAllCaps="false"
             android:textSize="16sp"
+            android:textColor="@color/blanco"
+            app:backgroundTint="@color/verde"
             app:cornerRadius="16dp"
             app:icon="@android:drawable/ic_menu_save"
             app:iconGravity="textStart"
@@ -118,6 +132,8 @@
             android:text="Consultar Registros"
             android:textAllCaps="false"
             android:textSize="16sp"
+            android:textColor="@color/blanco"
+            app:backgroundTint="@color/naranja"
             app:cornerRadius="16dp"
             app:icon="@android:drawable/ic_menu_agenda"
             app:iconGravity="textStart"

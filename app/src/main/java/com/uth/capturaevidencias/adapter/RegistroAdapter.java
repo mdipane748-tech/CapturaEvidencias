@@ -8,10 +8,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-
+import android.content.Intent;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
+import com.uth.capturaevidencias.FotoActivity;
 import com.uth.capturaevidencias.R;
 import com.uth.capturaevidencias.models.Registro;
 
@@ -103,6 +103,23 @@ public class RegistroAdapter
                 );
 
         holder.imgRegistro.setImageBitmap(bitmap);
+
+        holder.imgRegistro.setOnClickListener(v -> {
+
+            Intent intent =
+                    new Intent(
+                            v.getContext(),
+                            FotoActivity.class
+                    );
+
+            intent.putExtra(
+                    "imagen",
+                    registro.getImagenBase64()
+            );
+
+            v.getContext().startActivity(intent);
+
+        });
 
     }
 
